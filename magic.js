@@ -165,9 +165,11 @@ function global_keys(e) {
 	current_sketch = undefined;
     }
     function clear() {
-	current_sketch = undefined;
-	glyphs = [];
-	xPosition = 0;
+	trash();
+	// commented to avoid clear all by error, instead trash erase the last one or erase all while holding the key
+	//current_sketch = undefined;
+	//glyphs = [];
+	//xPosition = 0;
     }
     function recognize() {
 	if (current_sketch) {
